@@ -1,0 +1,94 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$spacing-unit:     10px;
+$image-size:       50px;
+$icon-size:        15px;
+
+
+// Sizes
+$on-palm:          768px;
+
+.light {
+  opacity: 0.7;
+  transition: opacity 200ms ease-in-out;
+}
+
+.light:hover {
+  opacity: 1;
+}
+
+.tutorial {
+  color: rgb(199, 217, 92);
+  font-weight: bold;
+}
+
+.journal {
+  color: rgb(39, 115, 213);
+  font-weight: bold;
+}
+
+.overview {
+  color: rgb(46, 201, 214);
+  font-weight: bold;
+}
+
+.menu-item {
+  margin: 20px;
+  border-bottom: none;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.menu-item:hover {
+  color: black;
+}
+
+.menu-item:after {
+  content: "";
+  display: block;
+  width: 0%;
+  background: black;
+  height: 1px;
+  opacity: 0;
+  -webkit-transition: width 350ms, opacity 350ms;
+  transition: width 350ms, opacity 350ms;
+}
+
+.menu-item:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "styles",
+        "highlight",
+        "syntax"
+;

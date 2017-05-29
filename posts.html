@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: posts
+---
+
+<section>
+  <h1>Posts</h1>
+
+  <p>
+    Really badly written stuff on other somewhat related stuff.
+  </p>
+</section>
+
+{% if site.posts == null %}
+  <p class="light">No posts yet.</p>
+{% else %}
+  {% for post in site.posts %}
+
+  <section>
+    <ul>
+      <li>
+        <p>
+          <a href=" {{ post.url }} ">{{ post.title }}</a>
+          <span class=" {{ post.tag }} "> &lt;{{ post.tag }}&gt; </span>
+          <br>
+          <span class="light">{{ post.description }}</span>
+          <p>
+      </li>
+    </ul>
+  </section>
+
+  {% endfor %}
+{% endif %}

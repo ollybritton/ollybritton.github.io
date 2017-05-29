@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Olly Britton</title>
+    <description>My personal site, where I sometimes post stuff.
+</description>
+    <link>https://ollybritton.com</link>
+    <atom:link href="https://ollybritton.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 22 Apr 2017 12:40:34 +0100</pubDate>
+    <lastBuildDate>Sat, 22 Apr 2017 12:40:34 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.0</generator>
+    
+  </channel>
+</rss>
