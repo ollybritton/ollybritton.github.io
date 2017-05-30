@@ -69,7 +69,7 @@ projects:
     link: https://github.com/ollybritton/storeDestruct
     image: https://raw.githubusercontent.com/ollybritton/Assets/master/store-destruct.png
   - name: punk
-    link: http://ollybritton.com/punk
+    link: punk
     description: Lets you mess with the "Harder, Better, Faster, Stronger" samples.
     image: https://raw.githubusercontent.com/ollybritton/Assets/master/favicon.png
 
