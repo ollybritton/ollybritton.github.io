@@ -68,6 +68,9 @@ projects:
     description: Click a button and you can pretend that a department store computer is about to blow up.
     link: https://github.com/ollybritton/storeDestruct
     image: https://raw.githubusercontent.com/ollybritton/Assets/master/store-destruct.png
+  - name: punk
+    description: Lets you mess with the "Harder, Better, Faster, Stronger" samples.
+    image: https://raw.githubusercontent.com/ollybritton/Assets/master/favicon.png
 
 social:
   - service: github
